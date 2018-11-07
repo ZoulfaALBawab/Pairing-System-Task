@@ -1,0 +1,42 @@
+{
+  "name": "pairing-system-task",
+  "version": "1.0.0",
+  "description": "a web application that called the Pairing System, the main purpose is to match the students as pairs for each Programming sprint randomly.",
+  "main": "index.js",
+  "scripts": {
+    "react-dev": "webpack -d --watch",
+    "server-dev": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZoulfaALBawab/Pairing-System-Task.git"
+  },
+  "author": "Zoulfa AL Bawab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZoulfaALBawab/Pairing-System-Task/issues"
+  },
+  "homepage": "https://github.com/ZoulfaALBawab/Pairing-System-Task#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "i": "^0.3.6",
+    "jquery": "^3.3.1",
+    "mongodb": "^3.1.9",
+    "nodemon": "^1.18.6",
+    "path": "^0.12.7",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
+    "react-router-dom": "^4.3.1",
+    "webpack": "^4.25.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-install": "^2.1.0",
+    "babel-loader": "^8.0.4",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "keywords": []
+}
