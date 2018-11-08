@@ -9,7 +9,7 @@ return (
 
 		   	<div>
              <Link to ='/newstudent'><button>Add Student</button></Link>
-             <Link to ='/pairing'><button>Pairing</button></Link>  
+             <Link to ='/pairing'><button>Pairing</button></Link>
              <Link to ='/history'><button>History</button></Link>
 		  	</div>
  )
@@ -17,3 +17,5 @@ return (
 
 }
 }
+
+export default Entry;
