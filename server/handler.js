@@ -36,13 +36,13 @@ exports.editStudent = function (req, res) {
   var id = req.body._id;
   var editStudentLevel = req.body.studentLevel;
   db.studentSchema.update({_id:id}, {$set: {studentLevel}},
-    function (req, res {
+    function (req, res){
       if (err){
         console.log(err);
       }
       res.send(data);
-
-  }))
+    }
+  )
 
 }
 
