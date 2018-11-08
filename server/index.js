@@ -21,7 +21,10 @@ app.use(bodyParser.urlencoded({ extended: false }))
 //back-end functions
 // it should be the same in the ajax call
 
-
+app.post('/add', handler.newStudent);
+app.get('/get', handler.findStudent);
+app.put('/update', handler.editStudent);
+app.post('/delete', handler.deleteStudent);
 
 ////////////////////////////////////////////
 
@@ -34,3 +37,5 @@ app.get('/*', (req, res) => {
 app.listen(3000, function() {
   console.log('listening on port 3000!');
 });
+
+module.exports = app;
