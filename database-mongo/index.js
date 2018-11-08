@@ -24,8 +24,8 @@ var Student = mongoose.model('Student', studentSchema);
 ///////////////////////// History Schema /////////////////////////
 
 var historySchema = mongoose.Schema ({
-  student1: String,
-  student2: String
+  array : [ {student1: String},
+  {student2: String}]
 });
 
 var Data = mongoose.model('Data', historySchema);

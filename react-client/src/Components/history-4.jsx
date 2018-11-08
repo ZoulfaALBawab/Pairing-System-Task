@@ -4,16 +4,53 @@ import $ from 'jquery';
 import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
 
 class History extends React.Component {
-render(){
-return (
 
-		   	<div>
+	constructor(){
+		super();
+		this.state = {
+			history:[]
+		};
+	}
 
-		  	</div>
- )
+	componentDidMount() {
+		this.getHp();
+	}
 
+	getHp(){
+		$.ajax({
+			method: 'GET',
+			url: '/get',
+			success: (history) => {
+				this.setState({history:history})
+			},
+			error: (data) => {
+			    console.error('Failed to get students', data);
+			}
+  		})
+	}
 
-}
+	render(){
+		return (
+		<div>
+	    	<ul>
+	    		<li>
+	    		{ this.state.history.map( (array) => {
+												return(
+										    			<table>
+										    				<th>
+										    					<td>Student1</td>
+										    					<td>Student2</td>
+										    				</th>
+										    				
+										    			</table>
+										    			)
+											}
+											)}
+	    		</li>
+	    	</ul>
+	    </div>
+	    )
+	}
 }
 
 export default History;

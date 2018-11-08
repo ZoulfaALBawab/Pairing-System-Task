@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.post('/add', handler.newStudent);
 app.get('/get', handler.findStudent);
 app.put('/update', handler.editStudent);
-app.post('/delete', handler.deleteStudent);
+app.delete('/delete', handler.deleteStudent);
 
 ////////////////////////////////////////////
 
