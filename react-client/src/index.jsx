@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
 import Entry from './components/entry-1.jsx';
-import addStudent from './components/addStudents-2.jsx';
+import AddStudent from './components/addStudents-2.jsx';
 import Pairing from './components/pairingStudents-3.jsx';
 import History from './components/history-4.jsx';
 
