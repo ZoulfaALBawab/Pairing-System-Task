@@ -9,14 +9,14 @@ db.on('error', function(){
 });
 
 db.once('open', function(){
-  console.log('mongoose connected successfully')
+  console.log('Hey , u , db is working')
 });
 
 ///////////////////////// Students's Schema /////////////////////////
 
 var studentSchema = mongoose.Schema ({
-  studentName : string,
-  studentLevel: string
+  studentName : String,
+  studentLevel: String
 });
 
 var Student = mongoose.model('Student', studentSchema);
@@ -24,13 +24,13 @@ var Student = mongoose.model('Student', studentSchema);
 ///////////////////////// History Schema /////////////////////////
 
 var historySchema = mongoose.Schema ({
-  student1: string,
-  student2: string
+  student1: String,
+  student2: String
 });
 
-var History = mongoose.model('History', historySchema);
+var Data = mongoose.model('Data', historySchema);
 
 ///////////////////////////////////////////////////////////////////////////
 
 module.exports.Student = Student;
-module.exports.History = History;
+module.exports.History = Data;
